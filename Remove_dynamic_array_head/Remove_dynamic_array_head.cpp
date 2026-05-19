@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     print_dynamic_array(array, logical_size, actual_size);
     std::cout << std::endl;
     std::string choice{};
-    std::cout << "Удалить первый элемент?";
+    std::cout << "Удалить первый элемент? ";
     std::cin >> choice;
     while (choice == "да")
     {
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
         std::cout << "Динамический массив: ";
         print_dynamic_array(array, logical_size, actual_size);
         std::cout << std::endl;
-        std::cout << "Удалить первый элемент?";
+        std::cout << "Удалить первый элемент? ";
         std::cin >> choice;
     }
 
@@ -66,7 +66,7 @@ void print_dynamic_array(int* arr, int logical_size, int actual_size)
     {
         std::cout << arr[item] << " ";
     }
-    for (int zero{ logical_size }; zero < actual_size; zero++)
+    for (int zero{ logical_size }; zero <= actual_size; zero++)
     {
         std::cout << "_ ";
     }
