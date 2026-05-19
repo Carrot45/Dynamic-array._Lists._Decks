@@ -74,7 +74,7 @@ void print_dynamic_array(int* arr, int logical_size, int actual_size)
 
 void remove_dynamic_array_head(int*& arr, int& logical_size, int& actual_size)
 {
-    if ((logical_size - 1) > ((actual_size / 3) - 1))
+    if ((logical_size - 1) > (actual_size / 3))
     {
         for (int item{}; item < logical_size - 1; item++)
         {
